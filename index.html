@@ -1,7 +1,9 @@
 <!doctype html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="author" content="Avidos">
 <!-- STYLESHEET -->
 <link rel="stylesheet" href="css/jquery.mobile.min.css">
 <link rel="stylesheet" href="css/styles.css">
@@ -15,9 +17,28 @@
 
 <body>
 <header>
-	<h3>Form - Avidroid</h3>
+	<h3>AVDS: Tester App</h3>
 </header>
-<div class="main"> </div>
+<div class="main">
+	<div class="batteryStatus">
+		<h4>Battery Status API</h4>
+		<span id="bs-unsupported" class="hidden">API not supported</span>
+		<div id="bt-results" class="hidden">
+			<h5>Current Status</h5>
+			<div id="bs-status">
+				<ul>
+					<li>Is battery in charge? <span id="in-charge" class="bs-info">unavailable</span></li>
+					<li>Battery will be charged in <span id="charging-time" class="bs-info">unavailable</span> seconds</li>
+					<li>Battery will be discharged in <span id="discharging-time" class="bs-info">unavailable</span> seconds</li>
+					<li>Current battery level: <span id="battery-level" class="bs-info">unavailable</span>/1</li>
+				</ul>
+			</div>
+		</div>
+		<h5>Log</h5>
+		<div id="log"></div>
+		<button id="clear-log" class="button-demo">Clear log</button>
+	</div>
+</div>
 <footer> </footer>
 </body>
 </html>

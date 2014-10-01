@@ -1,9 +1,36 @@
-.ui-content {
-	padding: 0 !important;
+/* BATTERY STATUS API*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
-.ui-listview {
-	margin: 0 !important;
+body {
+	max-width: 500px;
+	margin: 2em auto;
+	padding: 0 0.5em;
+	font-size: 20px;
 }
-.example-wrapper, .example-wrapper div.iscroll-scroller {
-	width: 100% !important;
+h1 {
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
+.bs-info {
+	font-weight: bold;
+}
+#log {
+	height: 200px;
+	width: 100%;
+	overflow-y: scroll;
+	border: 1px solid #333333;
+	line-height: 1.3em;
+}
+.button-demo {
+	padding: 0.5em;
+	margin: 1em;
+}
+.author {
+	display: block;
+	margin-top: 1em;
 }
